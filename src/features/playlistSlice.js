@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api/playList';
+const API_BASE_URL = 'http://localhost:5001/api/playList';
 
 
 export const fetchAllPlaylists = createAsyncThunk(
