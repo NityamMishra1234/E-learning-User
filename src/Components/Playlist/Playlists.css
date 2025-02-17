@@ -1,0 +1,20 @@
+.playlists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    padding-bottom: 80px; 
+    background-color: #f8f9fa;
+    height: 400px;
+  }
+  
+  .loading,
+  .error,
+  .no-playlists {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #555;
+    margin-top: 50px;
+  }
+  

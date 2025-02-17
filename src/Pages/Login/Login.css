@@ -1,0 +1,164 @@
+.login-container {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 231, 225);
+  }
+  
+  .login-animation-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .login-animation-img {
+    max-width: 90%;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .login-animation-section {
+      display: none;
+    }
+  }
+  
+  .login-form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .login-form-container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #4f46e5;
+  }
+  
+  .login-form {
+    margin-top: 20px;
+  }
+  
+  .login-input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    width: 100%;
+    background: #4f46e5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background: #3730a3;
+  }
+  
+  .login-divider {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+  }
+  
+  .login-divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .login-divider span {
+    padding: 0 10px;
+  }
+  
+  .login-social-buttons {
+    margin-top: 20px;
+  }
+  
+  .social-button {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .social-button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .google-button {
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .github-button {
+    background: #333;
+    color: #fff;
+  }
+  
+  .linkedin-button {
+    background: #0077b5;
+    color: #fff;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .signup-prompt {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signup-link {
+    color: #4f46e5;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

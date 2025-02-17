@@ -1,0 +1,179 @@
+.courses-container {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f5f8fa;
+    padding-bottom: 50px;
+  }
+  
+  
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 60px 80px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+    animation: float 5s infinite ease-in-out;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .explore-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 2s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #ff9900;
+    transform: translateY(-5px);
+  }
+  
+  .hero-image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    animation: floatImage 4s infinite ease-in-out;
+  }
+  
+ 
+  .playlists-section {
+    padding: 50px 80px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+ 
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    margin-top: 50px;
+  }
+  
+ 
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes floatImage {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+ 
+  @media (max-width: 1024px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .hero-image img {
+      width: 300px;
+    }
+  
+    .playlists-section {
+      padding: 30px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .explore-btn {
+      padding: 12px 25px;
+    }
+  
+    .hero-image img {
+      width: 250px;
+    }
+  }
+  

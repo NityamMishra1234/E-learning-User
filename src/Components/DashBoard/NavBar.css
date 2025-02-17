@@ -1,0 +1,161 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  animation: logoPulse 2s infinite;
+}
+
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  gap: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-right: 15px; 
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #ffd700;
+}
+
+.profile-name {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 20px;  
+  height: 2px;  
+  background-color: #fff;
+  margin: 3px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger .bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-left {
+    position: absolute;
+    top: 70px;
+    right: 0; 
+    width: 100%;
+    background: #1e3c72;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-left.open {
+    display: flex; 
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-section {
+    display: none; 
+  }
+}
+
+
+@keyframes logoPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.profile-section.small-screen {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 15px;
+ 
+}
+
+.profile-section.small-screen .profile-avatar {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.profile-section.small-screen .profile-name {
+  color: #fff;
+  font-weight: 600;
+}

@@ -1,0 +1,105 @@
+.contact-container {
+    background: linear-gradient(to right, #1e1e2f, #2a2a40);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-header h1 {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+  }
+  
+  .wave {
+    animation: wave 2s infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+  }
+  
+ 
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-card {
+    background: #394264;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-card a, .contact-card span {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 1.2rem;
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  .linkedin { color: #0077b5; }
+  .github { color: #333; }
+  .portfolio { color: #ff6347; }
+  .email { color: #ff6b6b; }
+  .phone { color: #32cd32; }
+  .address { color: #ffa500; }
+  
+  .contact-animation {
+    width: 300px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .contact-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .contact-animation {
+      width: 200px;
+    }
+  
+    .contact-card {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+  

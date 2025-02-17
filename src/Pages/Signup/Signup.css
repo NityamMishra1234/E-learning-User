@@ -1,0 +1,125 @@
+.signup-container {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: #f4f4f9;
+  }
+  
+  .signup-form-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .signup-form-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .signup-form-card h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtext {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .signup-input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border 0.3s;
+  }
+  
+  .signup-input:focus {
+    border-color: #4f46e5;
+    outline: none;
+  }
+  
+  .signup-button {
+    background: #4f46e5;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .signup-button:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .switch-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .nav-link {
+    color: #4f46e5;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-animation {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .signup-svg {
+    max-width: 90%;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-animation {
+      display: none;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
